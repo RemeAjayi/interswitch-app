@@ -1,0 +1,65 @@
+.wrapper{
+    background: url('/src/assets/bg.jpg') no-repeat center center fixed;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    padding: 15px;
+    display: grid;
+    place-content: center;
+}
+form
+{
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    border: 0.5px solid rgba(151, 151, 151, 0.6);
+    border-radius: 5px;
+    width: 308px;
+    height: 419px;
+    padding: 10px;
+}
+
+@media (max-width: 400px)
+{
+    form{
+        width: 90% !important;
+    }
+}
+.form-header
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "a b";
+}
+.form-logo{
+     justify-self: end; 
+     grid-area: b;
+     align-self: center;
+
+}
+.form-header h1{
+    grid-area: a;
+}
+.input-background {
+    background-color: #FFFFFF;
+    border: 0.5px solid rgba(151, 151, 151, 0.48);
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.09);
+    width: 260px;
+    height: 36px;
+  }
+.login-btn
+{
+        background-color: #C82B1D;
+        width: 260px;
+        height: 45px;
+}
+.access-btn
+{
+    border: 1px solid #C82B1D;
+    width: 260px;
+    height: 45px;
+}
