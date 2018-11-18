@@ -84,3 +84,6 @@ small, label{
 button{
     font-family: 'CircularStd-Bold', sans-serif;
 }
+ul, p{
+  font-family: 'CircularStd-Book', sans-serif;
+}

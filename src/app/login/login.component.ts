@@ -1,11 +1,6 @@
-import { Component, 
-  ViewChild,
-  ViewContainerRef,
-  ComponentFactoryResolver,
-  ComponentRef,
-  ComponentFactory,
-  OnInit } from '@angular/core';
-  import {DashboardComponent} from '../dashboard/dashboard.component';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -13,22 +8,16 @@ import { Component,
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  componentRef: any; 
 
-  @ViewChild('dashboard', { read: ViewContainerRef }) entry: ViewContainerRef;
-    constructor(private resolver: ComponentFactoryResolver) { }
-  
-    createComponent() {
-      this.entry.clear();
-      const factory = this.resolver.resolveComponentFactory(DashboardComponent);
-      this.componentRef = this.entry.createComponent(factory);
-      // const componentRef = this.entry.createComponent(factory);
-    }
- 
-    destroyComponent() {
-      this.componentRef.destroy();
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+   ){}
+  viewDashboard()
+  {
+    this.router.navigate(['dashboard']);
   }
-
+  //routes to dashboard
   ngOnInit() {
   }
 
