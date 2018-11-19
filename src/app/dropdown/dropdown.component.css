@@ -36,8 +36,9 @@
     border-radius: 2px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
     width: 196px;
-    height: 312px;
+    /* height: 312px; */
     z-index: 1;
+    font-family: CircularStd-Book, sans-serif;
 }
 
 /* Links inside the dropdown */
@@ -56,18 +57,30 @@
 
 #apply
 {
-    color: #FFFFFF;
-    font-family: CircularStd;
+    background-color: #D42E12;
+    border-radius: 13.5px;
+    width: 59px;
+    height: 27px;
+    font-family: CircularStd-Book, sans-serif;
     font-size: 10px;
     font-weight: 300;
     line-height: 12px;
-    text-align: left;
+    border: 0;
+    color: #fff;
 }
 #cancel
 {
+    font-family: CircularStd-Book, sans-serif;
     border: 1px solid #2F2D2E;
     border-radius: 13.5px;
-    width: 70px;
+    width: 69px;
     height: 27px;
     color: #2F2D2E;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+}
+.btn-row
+{
+    text-align: center;
 }
