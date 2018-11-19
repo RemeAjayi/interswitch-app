@@ -47,9 +47,10 @@
     height: 24px;
     width: 24px;
     color: #c0c0c0;
-    z-index: 2;
-    position: relative;
-    /* padding: 2px; */
+    justify-self: flex-end;
+    align-self: center;
+    margin-left: auto;
+ 
 }
 .date-toggle
 {
@@ -58,13 +59,16 @@
     border-radius: 12px;
     width: 116px;
     height: 24px;
-    padding: 2px 10px; 
+    padding: 2px 0px 2px 10px; 
     text-align: center;
     font-family: CircularStd-Book, sans-serif;
     grid-area: b;
     align-self: center;
-    z-index: 1;
-    position: relative;
+    display: flex;
+}
+.date-toggle p
+{
+    align-self: center;
 }
 #search-form
 {
