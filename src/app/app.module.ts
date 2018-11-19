@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { SearchBrComponent } from './search-br/search-br.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LoginComponent,
     DashboardComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    DropdownComponent,
+    SearchBrComponent
   ],
   imports: [
     BrowserModule,
