@@ -1,4 +1,20 @@
 <span class="date-toggle">
 <p class="size-12" style="color: #c0c0c0;">Today: </p>
 <p class="size-12" style="color: #4a4a4a;"> 20 Apr</p>
-<button class="toggle-icon">v</button></span>
+<button class="toggle-icon" (click)="showMenu()">v</button>
+
+<div id="myDropdown" class="dropdown-content">
+        <a href="#">Today</a>
+        <a href="#">Yesterday</a>
+        <a href="#">Last 7 Days</a>
+        <a href="#">Last 30 Days</a>
+        <a href="#">This Month</a>
+        <a href="#">Last Month</a>
+        <a href="#">Custom Range</a>
+        <div class="btn-row">
+        <button id="apply">Apply</button>
+        <button id="cancel">Cancel</button>
+      </div>
+      </div>
+
+</span>
