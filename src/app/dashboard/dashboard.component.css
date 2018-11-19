@@ -43,13 +43,18 @@
 {
     background-color: #2f2d2e;
     border-radius: 12px;
-    height: 100%;
+    border:0;
+    height: 24px;
+    width: 24px;
     color: #c0c0c0;
+    z-index: 2;
+    position: relative;
     /* padding: 2px; */
 }
 .date-toggle
 {
     background-color: #ECECEC;
+    border: 0;
     border-radius: 12px;
     width: 116px;
     height: 24px;
@@ -58,6 +63,8 @@
     font-family: CircularStd-Book, sans-serif;
     grid-area: b;
     align-self: center;
+    z-index: 1;
+    position: relative;
 }
 #search-form
 {
@@ -148,6 +155,7 @@
 #orange-btn
 {
   background-color: #c82b1d;
+  opacity: 1 !important;
   border-radius: 12px;
   border: 0;
   color: #fff;
