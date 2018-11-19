@@ -77,8 +77,9 @@
     background-color: #FFFFFF;
     border: 0.5px solid #D6D6D6;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    width: 215px;
     height: 230px;
+    padding: 2% 2% 2% 5%;
+    color: #4a4a4a;
   }
 .col-1
 {
@@ -110,10 +111,57 @@
         border: 0.5px solid #979797;
         opacity: 0.6111865942028986;
         height: 100%;
+    
 }
 .row-2
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
+}
+.graph-header
+{
+    height: 50px;
+    display: flex;
+    max-width: 90%;
+    padding: 0 4%;
+    max-height: 50px;
+    align-items: center;
+}
+.separator
+{
+    border: 0.5px solid #979797;
+    width: 459px;
+}
+#summary
+{
+ margin-right: auto;
+ font-family: CircularStd-Bold, sans-serif;
+ font-size: 14px;
+ /* since the parent has a flex display,
+  all the extra space goes right with this style */
+}
+#month{
+ margin-right: 10px; 
+ font-size: 12px;  
+}
+#orange-btn
+{
+  background-color: #c82b1d;
+  border-radius: 12px;
+  border: 0;
+  color: #fff;
+  /* padding: 5px 10px; */
+  text-align: center;
+  font-size: 12px;
+  width: 80px;
+  height: 20px;
+}
+.lorem
+{
+    display: flex;
+    padding: 0 4%;
+}
+.lorem div{
+    flex: 0 0 50%;
 }
