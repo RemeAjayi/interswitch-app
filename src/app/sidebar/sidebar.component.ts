@@ -9,6 +9,10 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
 
+  showMenu()
+{
+  document.getElementById("menu").classList.toggle("show");
+}
   ngOnInit() {
   }
 

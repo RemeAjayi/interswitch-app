@@ -1,11 +1,25 @@
 <div class="side-nav">
-<p id="menu-title">Menu</p>
-<ul class="menu">
-<li><i class="icon-dashboard"></i>Dashboard</li>
-<li><i class="icon-cms"></i>Content Management<span class="dropdown-icon">></span></li>
-<li><i class="icon-user"></i>User Management<span class="dropdown-icon">></span></li>
-<li><i class="icon-reporting"></i>Reporting<span class="dropdown-icon">></span></li>
-<li><i class="icon-settings"></i>System Settings</li>
+<p id="menu-title" (click)="showMenu()">Menu</p>
+<ul class="menu" id="menu">
+<li>
+  <a class="nav-link" routerLink="/dashboard">
+  <i class="icon-dashboard"></i>Dashboard</a>
+</li>
+<li>
+  <a class="nav-link">
+    <i class="icon-cms"></i>Content Management
+  <span class="dropdown-icon">></span></a>
+</li>
+<li>
+  <a class="nav-link" routerLink="/user-management">
+  <i class="icon-user"></i>User Management
+  <span class="dropdown-icon">></span></a>
+</li>
+<li><a class="nav-link" routerLink="/reporting">
+  <i class="icon-reporting"></i>Reporting
+  <span class="dropdown-icon">></span></a>
+</li>
+<li><a class="nav-link"><i class="icon-settings"></i>System Settings</a></li>
 </ul>
 <div class="footer">
   <img src="assets/logo-red.png" height="33px"> 

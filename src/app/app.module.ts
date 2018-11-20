@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { SearchBrComponent } from './search-br/search-br.component';
+import { ReportingComponent } from './reporting/reporting.component';
+import { UserMgtComponent } from './user-mgt/user-mgt.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SearchBrComponent } from './search-br/search-br.component';
     HeaderComponent,
     SidebarComponent,
     DropdownComponent,
-    SearchBrComponent
+    SearchBrComponent,
+    ReportingComponent,
+    UserMgtComponent
   ],
   imports: [
     BrowserModule,

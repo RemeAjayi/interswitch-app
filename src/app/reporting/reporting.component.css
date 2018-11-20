@@ -1,0 +1,86 @@
+.wrapper
+{
+    margin: 0;
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header  header  header header"
+    "sidebar content content content";
+}
+
+.header
+{
+    margin: 0;
+    grid-area: header;
+}
+.sidebar
+{
+    grid-area: sidebar;
+}
+.main
+{
+    grid-area: content;
+}
+.content
+{
+    margin-right: 6%;
+    /* width: 85%; */
+}
+.row-1
+{
+    display: flex;
+    flex: 0 0 auto;
+
+}
+@media (max-width:768px)
+{
+    .row-1{
+        flex-direction: column;
+    }
+}
+.content-heading
+{
+     align-self: center;
+     font-size: 20px;
+     margin-right: 10px;
+}
+.dropdown
+{
+    align-self: center;
+}
+.searchbar
+{
+    align-self: center;
+    justify-self: end;
+    margin-left: auto;
+}
+.row-3
+{
+    display: flex;
+    justify-content: space-between;
+    color: #757575;
+}
+#customers
+{
+    width: 950px;
+    border-spacing: 7px;
+    font-family: 'CircularStd-Book', sans-serif;
+    font-weight: 100;
+}
+tr{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(192, 192, 192, 0.35);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 #8BC34A;
+    width: 941px;
+    height: 50px;
+}
+td 
+{
+    font-family: 'CircularStd-Book', sans-serif;
+    color:#757575;
+}
+th{
+    font-family: 'CircularStd-Book', sans-serif;
+    color:#777;
+}

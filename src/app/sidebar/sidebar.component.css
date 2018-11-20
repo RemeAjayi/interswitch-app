@@ -7,6 +7,15 @@
     grid-template-areas: "." "menu" "menu" "." "footer";
  
   }
+  .menu li a 
+  {
+      color: #c0c0c0;
+      text-decoration: none;
+  }
+  .menu li a:hover, .menu li a:active
+  {
+      color: #fff;
+  }
   @media (max-width: 768px)
   {
      .menu, .footer{
