@@ -29,25 +29,74 @@
 }
 .row-1
 {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "a b . . . c c c";
+    display: flex;
+    flex: 0 0 auto;
 
+}
+@media (max-width:768px)
+{
+    .row-1{
+        flex-direction: column;
+    }
 }
 .content-heading
 {
-     grid-area: a; 
      align-self: center;
      font-size: 20px;
+     margin-right: 10px;
 }
 .dropdown
 {
-    grid-area: b;
     align-self: center;
+}
+#admin
+{
+    margin-left: auto;
+    background-color: #aaa;
+    border-radius: 3px;
+    width: 194px;
+    height: 36px;
+    align-self: center;
+    color: #fff;
+    border: 0;
 }
 .searchbar
 {
-    grid-area: c;
     align-self: center;
     justify-self: end;
+    margin-left: 2%;
+}
+.row-3
+{
+    display: flex;
+    justify-content: space-between;
+    color: #757575;
+}
+#admin-users
+{
+    width: 940px;
+    border-spacing: 7px;
+    font-family: 'CircularStd-Book', sans-serif;
+    font-weight: 100;
+}
+#admin-users-header
+{
+    border: 0 !important;
+}
+tr{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(192, 192, 192, 0.35);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 #8BC34A;
+    height: 50px;
+    padding: 1% 1%;
+    margin-right: 1%
+}
+td 
+{
+    font-family: 'CircularStd-Book', sans-serif;
+    color:#757575;
+}
+th{
+    font-family: 'CircularStd-Book', sans-serif;
+    color:#777;
 }

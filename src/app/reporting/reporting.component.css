@@ -68,6 +68,10 @@
     font-family: 'CircularStd-Book', sans-serif;
     font-weight: 100;
 }
+#customers-header
+{
+    border: 0 !important;
+}
 tr{
     background-color: #FFFFFF;
     border: 1px solid rgba(192, 192, 192, 0.35);
@@ -79,6 +83,7 @@ td
 {
     font-family: 'CircularStd-Book', sans-serif;
     color:#757575;
+    padding: 1% 1%;
 }
 th{
     font-family: 'CircularStd-Book', sans-serif;
